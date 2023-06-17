@@ -1,0 +1,177 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+  
+  
+  /*BODY CSS*/
+  body {
+    background-color: #f3ecea;
+    font-family: "Lato", sans-serif;
+    margin: 0;
+  }
+  
+  /*NAVBAR CSS */ 
+  header {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top:0;
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #37383a;
+    height: 10vh;
+  }
+  .navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    list-style: none;
+    font-size: min(6vh,20px);
+    font-weight: bold;
+  
+  }
+  .navbar a {
+    text-decoration: none;
+    color: #fbfaf8;
+  }
+  
+  .navbar a:hover {
+    color: bisque;
+  }
+  
+  /* HOME CSS */
+  #home {
+    padding-top: 10vh;
+    display:flex;
+    width: 100vw;
+  }
+  #image {
+    max-width: 100%;
+    width: 30vw;
+    margin: 5vw;
+    min-width: 30vw;
+    border-radius: 2%;
+    object-fit: cover;
+  
+  }
+  .div.first {
+    flex-basis: 60vw;
+    padding: 5vw;
+  }
+  .div.second {
+    flex-basis: 40vw;
+    display: flex;
+  }
+  #home h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: min(7vw, 60px);
+    color: #37383a;
+  }
+  #home h2 {
+    color: #9f9f9f;
+    text-transform: uppercase;
+    font-size: min(5vw, 21px);
+  }
+  #home p {
+    color: #37383a;
+    font-size: min(3vw, 20px);
+  }
+  
+  /* BIOGRAPHY CSS */
+  
+  #biography h2 {
+    font-size: min(6vw, 30px);
+    text-align:center;
+    font-family: 'Libre Baskerville', serif;
+  }
+  #biography p {
+    color: #37383a;
+    padding: 0 5vw 5vw;
+    font-size: min(3vw, 20px);
+  }
+  
+  /* QUOTE CSS */
+  
+  #quote {
+    text-align: center;
+    background-color: #37383a;
+    color: white;
+    height: 15vh;
+    font-size: min(4vw, 28px);
+    font-family: 'Libre Baskerville', serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  /*BEST ALBUMS CSS*/
+  
+  #albums {
+    padding: 5vw;
+    margin-top: 10vh;
+    background-color: #333333;
+  }
+  
+  #albums h2 {
+    color: white;
+  }
+  .gallery {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .gallery img {
+    width: 25vw;
+    height: 40vw;
+    object-fit: cover;
+  }
+  
+  .gallery img:hover {
+    opacity: 0.5;
+  }
+  
+  /* SOURCES CSS */
+  #sources{
+    padding-top: 10vh;
+  }
+  #sources h2 {
+    text-align: center;
+    color: #37383a;
+    font-size: min(4vw, 30px);
+    margin-bottom: 7vh;
+  }
+  #sources ul {
+    list-style: none;
+    display: block;
+    width: 100vw;
+    text-align: center;
+    padding: 0;
+  }
+  #sources li {
+    font-size: min(3vw, 24px);
+    margin-bottom: 1vh;
+  }
+  #sources a {
+    text-decoration: none;
+  }
+  
+  
+  /* FOOTER CSS */
+  footer {
+    margin-top: 7vh;
+    background-color: #37383a;
+    margin-bottom: 0;
+    color: #fbfaf8;
+    text-align: center;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: min(21px, 3vw);
+  }

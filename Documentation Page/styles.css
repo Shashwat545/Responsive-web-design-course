@@ -1,0 +1,101 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+  }
+  body {
+    margin:0;
+  }
+  
+  @media only screen and (max-width: 815px) {
+    nav {
+      width: 98vw !important;
+      position: static !important;
+      top: 0;
+    }
+    #link-list {
+      height: 35vh !important;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+    }
+    #border-left{
+      display:none !important;
+    }
+    #main-doc {
+      margin-left: 0 !important;
+    }
+  }
+  
+  /*NAVBAR CSS*/
+  
+  nav {
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 300px;
+    position: fixed;
+    /* border-right: 2px solid #4d4e3a; */
+  }
+  
+  #link-list {
+    overflow: auto;
+    overflow-x: hidden;
+    height: 85vh;
+  }
+  
+  nav a {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    text-indent: 25px;
+    text-decoration: none;
+    color: #4d4e3a;
+    font-size: 18px;
+    height: 3rem;
+    border-top: 1px solid black;
+  }
+  
+  nav header {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  #border-left {
+    width: 2px;
+    height: 100vh;
+    background-color: #4d4e3a;
+    position: fixed;
+    margin-left: 300px;
+  }
+  
+  /*MAIN BODY CSS*/
+  
+  p,li, ul, code{
+    color: #4d4e3a;
+    line-height: 25px
+  }
+  
+  li {
+    margin-bottom: 15px;
+  }
+  
+  #main-doc {
+    margin-left: 302px;
+    padding: 35px 40px 35px 60px;
+  }
+  
+  #main-doc header {
+    font-size: 30px;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    text-indent: -25px;
+  }
+  
+  code {
+    display: block;
+    background-color: #f7f7f7;
+    padding: 20px;
+    font-family: monospace;
+    margin-left: 10px;
+  }

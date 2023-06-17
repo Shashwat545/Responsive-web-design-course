@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact Me</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1 id="title">Contact Me</h1>
+  <p id="description">Fill in the form below to connect with me</p>
+  <form id="survey-form" method="get">
+    <label id="name-label" for="name">Name <input id="name" type="text" placeholder="Enter your name" required></label>
+    <label id="email-label" for="email">Email <input id="email" type="email" required placeholder="Enter your Email"></label>
+    <label id="number-label" for="number">Age <input id="number" type="number" min="13" max="120" placeholder="Age"></label>
+    <label class="role">Which option best describes your current role?
+        <select id="dropdown">
+          <option disabled selected>Select current role</option>
+          <option>Student</option>
+          <option>Full Time Job</option>
+          <option>Full Time Learner</option>
+          <option>Prefer not to say</option>
+          <option>Other</option>
+        </select>
+      </label>
+    <label class="radiochoice">
+        Would you recommend this website to a friend? </label>
+    <label class="refer"><input name="recommend" type="radio" value="definitely"> Definitely</label>
+    <label class="refer"><input name="recommend" type="radio" value="maybe"> Maybe</label>
+    <label class="refer"><input id="notsure" name="recommend" type="radio" value="not sure"> Not sure</label>
+
+    <label>What is your favorite way of learning to code?
+        <select id="feature">
+          <option disabled selected>Select an option</option>
+          <option>Challenges</option>
+          <option>Projects</option>
+          <option>Community</option>
+          <option>Open Source</option>
+        </select>
+      </label>
+    <label id="improve">What are you currently working upon? <span>(Check all that apply)</span></label>
+    <label class="box-text"><input type="checkbox" value="Front-end Projects"> Front-end Projects</label>
+    <label class="box-text"><input type="checkbox" value="Back-end Projects"> Back-end Projects</label>
+    <label class="box-text"><input type="checkbox" value="Data Visualization"> Data Visualization</label>
+    <label class="box-text"><input type="checkbox" value="Challenges"> Challenges</label>
+    <label class="box-text"><input type="checkbox" value="Open Source Community"> Open Source Community</label>
+    <label class="box-text"><input type="checkbox" value="Gitter help rooms"> Gitter help rooms</label>
+    <label class="box-text"><input type="checkbox" value="Videos"> Videos</label>
+    <label class="box-text"><input type="checkbox" value="City Meetups"> City Meetups</label>
+    <label class="box-text"><input type="checkbox" value="Wiki"> Wiki</label>
+    <label class="box-text"><input type="checkbox" value="Forum"> Forum</label>
+    <label class="box-text"><input type="checkbox" id="courses" value="Additional Courses"> Additional Courses</label>
+    <label id="comments">
+        Any comments or suggestions?
+        <textarea id="comment-box" placeholder="Enter your comment here..." rows="5"></textarea>
+      </label>
+    <input id="submit" type="submit">
+  </form>
+</body>
+
+</html>

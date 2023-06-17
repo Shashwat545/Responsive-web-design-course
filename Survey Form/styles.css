@@ -1,0 +1,67 @@
+body {
+    background: url(https://images.unsplash.com/photo-1472148083604-64f1084980b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+    color: white;
+    margin-bottom:0;
+    font-family: sans serif;
+  }
+  form {
+    background-color: #03001C77;
+    width:60%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  select, input {
+    display: block;
+    width: 100%;
+    height: 30px;
+  }
+  h1, p {
+    text-align: center;
+  }
+  textarea {
+    width:100%;
+  }
+  input[type="checkbox"] {
+    width: unset;
+    display: inline;
+    margin: 0;
+    vertical-align:middle;
+  }
+  input[type="radio"] {
+    width: unset;
+    display: inline;
+    margin: 0;
+    vertical-align:middle;
+  }
+  #improve {
+    display: block;
+  }
+  .box-text {
+    display: block;
+  }
+  .refer {
+    display: block;
+  }
+  #title {
+    font-family: sans-serif;
+  }
+  #description {
+    font-family: sans;
+  }
+  label, input {
+    margin: 10px 0;
+  }
+  #number, #dropdown, #notsure, #courses, #feature, #comment-box {
+    margin-bottom: 20px;
+  }
+  #courses, #notsure {
+    margin-top:0px;
+    vertical-align:top;
+  }
+  #submit {
+    background-color: green;
+    color: white;
+  }
+  #comment-box {
+    margin-top:15px;
+  }

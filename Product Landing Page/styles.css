@@ -1,0 +1,215 @@
+/* Common CSS*/
+*{
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #FAF0E4;
+    font-family: Lato, sans-serif;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  
+  /*NAVBAR CSS*/
+  
+  #header-img {
+    width: 300px;
+  }
+  #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: inherit;
+    padding: 20px 0;
+    width: 92vw;
+  }
+  #nav-bar {
+    display:flex;
+    gap: 10vw;
+  }
+  .nav-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /*MAIN CSS*/
+  main {
+    display: grid;
+    grid-template-columns: 1fr 70vw 1fr;
+    row-gap: 30px;
+  }
+  #first {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-column: 2/3;
+  }
+  #first h2 {
+    text-align: center;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  form input[type="email"] {
+    padding: 5px 30px;
+    text-align: left;
+  }
+  form input[type="submit"] {
+    width: min-content;
+    padding: 5px 15px;
+    background-color: #f1c40f;
+    border: none;
+    font-weight: bold;
+  }
+  
+  /*FEATURES CSS*/
+  .two {
+    grid-column: 2/3;
+  }
+  #two, #three, #four, .inner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  #two i, #three i, #four i {
+    width:20vw;
+    max-width: 80px;
+  }
+  .caption-heading, .caption-subtitle {
+    margin: 0px auto;
+  }
+  #two, #three, #four {
+    margin-bottom: 40px;
+  }
+  
+  /* YOUTUBE VIDEO */
+  #yt-video {
+    display: flex;
+    justify-content: center;
+    grid-column: 2/3;
+  }
+  
+  /*PRICE CSS*/
+  .all {
+    grid-column: 1/-1;
+  }
+  .price {
+    display: flex;
+    gap: 2vw;
+    justify-content: center;
+  }
+  #price-1, #price-2, #price-3 {
+    border: 1px solid black;
+    text-align: center;
+    height: 300px;
+    width: 250px;
+  } 
+  .price ul {
+    list-style: none;
+    padding: 0;
+  }
+  .price li {
+    margin-bottom: 10px;
+  }
+  .price li:last-of-type {
+    margin-bottom: 35px;
+  }
+  .price h3 {
+    background-color: lightgrey;
+    margin-top:0;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .price input {
+    border: none;
+    background-color: #f1c40f;
+    padding: 10px 15px;
+    text-transform: uppercase;
+  }
+  
+  /*FOOTER CSS*/
+  footer {
+    background-color: lightgrey;
+    padding-right: 10px;
+  }
+  footer div a{
+    text-decoration: none;
+    color: inherit;
+  }
+  footer ul {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+  }
+  footer p {
+    text-align: right;
+    color: #444444;
+  }
+  
+  @media only screen and (max-width:700px) {
+    body {
+      margin:0;
+    }
+    #header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      background-color: inherit;
+      padding: 20px 0;
+      width: 92vw;
+    }
+    #nav-bar {
+      display:block;
+      gap: 10vw;
+    }
+    #nav-bar div {
+      padding: 1px;
+    }
+    #first {
+      margin-top: 120px;
+    }
+    .two {
+      grid-column: 1/-1;
+    }
+    #two, #three, #four {
+      margin: 0 15px;
+    }
+    #two i, #three i, #four i {
+      width:20vw;
+      max-width: 80px;
+      margin-right: 10px;
+    }
+    #yt-video {
+    grid-column: 1/-1;
+    margin: 0 8px;
+    }
+    .price {
+    flex-direction: column;
+    }
+    #pricing-section {
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 8px;
+    }
+  }
+  
+  @media only screen and (max-width:500px) {
+    #two i, #three i, #four i {
+      display:none;
+    }
+    .caption-heading, .caption-subtitle {
+      text-align: center;
+    }
+  }
